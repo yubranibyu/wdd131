@@ -21,7 +21,7 @@ nav {
     background-color: grey;
 }
 h1 {text-align: center;}
-h3 {
+h2 {
     text-align: center;
     background-color: var(--principal-color);
     font-size: 25px;
@@ -44,7 +44,17 @@ nav li {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:hover {
+    color:green ;
+}
+
+li:hover {
+    color: green;
 }
 
 .about_information {
@@ -53,6 +63,7 @@ a {
 }
 
 main {
+    max-width: 100%;
     display: flex;
     justify-content: center;
     gap: 3%;
