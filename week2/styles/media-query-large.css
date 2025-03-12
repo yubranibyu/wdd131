@@ -1,0 +1,20 @@
+@media (min-width: 500px) {
+    /* Aquí van los estilos que se aplicarán a partir de 500px */
+    body {
+        background-color: lightblue;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    header, footer {
+        background-color: rgb(44, 7, 179);
+        color: black;
+        text-align: center;
+        text-decoration: solid;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
