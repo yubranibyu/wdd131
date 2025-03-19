@@ -6,6 +6,13 @@ body {
     background-color: #f4f4f4;
 }
 
+.temple_hide {
+
+    color: #fff;
+    
+}
+   
+
 header {
     display: flex;
     justify-content: space-between;
