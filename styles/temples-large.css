@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        position: static;
+        background: none;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    section {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
