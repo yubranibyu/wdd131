@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+    
+    #weather-icon {
+        display: none;
+    }
+
+    .weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
