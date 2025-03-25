@@ -1,13 +1,101 @@
-@media (max-width: 600px) {
-    
-    #weather-icon {
-        display: none;
-    }
 
-    .weather {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+
+:root {
+    --italy-green: #009246;
+    --italy-white: #FFFFFF;
+    --italy-red: #CE2B37;
 }
 
+/* General styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--italy-green);
+    text-align: center;
+    
+}
+
+/* Header */
+header {
+    background-color: var(--italy-red);
+    color: var(--italy-white);
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.weather-tittle {
+    background-color: var(--italy-green);
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+
+}
+/* Hero section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 3%;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; 
+}
+
+.weather-icon:hover {
+    width: 100px;
+    height: 100px;
+}
+/* Information boxes */
+.data, .weather {
+    position: absolute;
+    background-color: var(--italy-white);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+.weather {
+    padding: 0px;
+}
+/* Titles for information boxes */
+.data h2, .weather h2 {
+    background-color: var(--italy-green);
+    color: var(--italy-white);
+    padding: 10px;
+    margin: -15px -15px 10px -15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.weather h2 {
+    margin: 0px;
+    
+    
+}
+/* Position of the information boxes */
+.data {
+    top: 40%;
+    left: 10%;
+}
+
+.weather {
+    top: 100%;
+    right: 10%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--italy-red);
+    color: var(--italy-white);
+    padding: 15px;
+    font-size: 1.2rem;
+}

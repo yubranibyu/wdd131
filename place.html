@@ -19,9 +19,11 @@
     <main>
         <section class="hero">
             <picture>
-                <source srcset="images/hero-image.webp" type="image/webp">
-                <img src="images/hero-image.webp" alt="Italian buildings">
+                <source srcset="images/hero-image_large.webp" media="(min-width: 1025px)">
+                <source srcset="images/hero-image_medium.webp" media="(min-width: 601px)">
+                <img src="images/hero-image_small.webp" alt="Italian buildings">
             </picture>
+            
         </section>
 
         <section class="data">
@@ -37,12 +39,20 @@
         </section>
 
         <section class="weather">
-            <h2>Weather ⛅</h2>
+            <div class="weather-tittle">
+                <h2>Weather </h2>
+                <img src="images/weather-icon.svg" alt="Weather Icon" id="weather-icon" class="weather-icon" />
+            </div>
+            
+            <!-- Weather Icon as an external SVG -->
+            
+        
             <p><strong>Temperature:</strong> 18°C</p>
             <p><strong>Conditions:</strong> Sunny</p>
             <p><strong>Wind:</strong> 10 km/h</p>
             <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
         </section>
+        
     </main>
 
     <footer>
