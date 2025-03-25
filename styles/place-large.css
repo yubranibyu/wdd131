@@ -16,6 +16,13 @@ body {
     
 }
 
+.weather-tittle::after {
+    content: "Weather";  /* El texto que aparece después del título */
+    font-size: 0.5rem;
+    color: var(--italy-white);
+    margin-left: 10px; /* Separación entre el icono y el texto generado */
+}
+
 /* Header */
 header {
     background-color: var(--italy-red);
@@ -49,10 +56,8 @@ header {
     margin-bottom: 10px; 
 }
 
-.weather-icon:hover {
-    width: 100px;
-    height: 100px;
-}
+
+
 /* Information boxes */
 .data, .weather {
     position: absolute;
