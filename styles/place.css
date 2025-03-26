@@ -1,43 +1,39 @@
-/* Media Query for screens smaller than 600px (Mobile) */
 @media (max-width: 600px) {
     
-    /* Hide the weather icon on small screens */
-    #weather-icon {
-        display: none;
+    header {
+        font-size: 1.2rem;
+        padding: 15px;
     }
 
-    /* Style the weather section for small screens */
-    .weather {
-        display: flex;
-        flex-direction: column; /* Stack the title and icon vertically */
-        align-items: center; /* Align the items in the center */
+    
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
     }
 
-    /* Adjust the title and icon placement on small screens */
-    .weather-tittle {
-        flex-direction: column;  /* Change the layout to column */
-        gap: 5px;  /* Reduce space between the title and icon */
+    
+    .data, .weather {
+        width: 90%;
+        position: static;
+        margin: 10px auto;
     }
 
-    .weather-tittle::after {
-        margin-left: 0;  /* Remove the extra space on smaller screens */
+    
+    .data h2, .weather h2 {
+        font-size: 1.4rem;
+        padding: 8px;
     }
 
-    /* Reduce the size of the weather icon */
+    
     .weather-icon {
-        width: 40px;  /* Reduced icon size */
-        height: 40px; /* Reduced icon size */
+        width: 40px;
+        height: 40px;
     }
 
-    .weather-icon:hover {
-        width: 50px;  /* Reduced hover size */
-        height: 50px; /* Reduced hover size */
-    }
-
-    /* Make sure the data and weather containers don't overlap or cause issues */
-    .weather, .data {
-        position: static; /* Remove fixed positioning for better responsiveness */
-        width: auto;  /* Let the width adjust automatically */
-        margin: 10px; /* Add spacing around the containers */
+    
+    footer {
+        font-size: 1rem;
+        padding: 10px;
     }
 }
