@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Yubrani Yaguaramay">
+  <meta name="description" content="Interactive product review and order form with star rating, dynamic product selection, helpful features checklist, and localStorage submission counter. Built with HTML, CSS, and JavaScript.">
   <title>Product Review Form</title>
   <link rel="stylesheet" href="styles/form-large.css">
-  <link rel="stylesheet" href="styles/form.css" />
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
   <main>
@@ -38,6 +45,8 @@
       <label><input type="checkbox" id="feature1" name="features" value="wifi"> Wi-Fi</label>
       <label><input type="checkbox" id="feature2" name="features" value="bluetooth"> Bluetooth</label>
       <label><input type="checkbox" id="feature3" name="features" value="gps"> GPS</label>
+      <label><input type="checkbox" id="feature5" name="features" value="noise-cancellation"> Noise Cancellation</label>
+
 
       <!-- Written Review -->
       <label for="review">Written Review</label>
@@ -48,7 +57,7 @@
       <input type="text" id="username" name="username" />
 
       <!-- Submit -->
-      <input type="submit" value="Submit Review" />
+      <input type="submit" value="Send review" />
     </form>
   </main>
 
