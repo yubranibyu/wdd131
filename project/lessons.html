@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lessons | Language Learner</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Language Learner</h1>
+      <button id="menu-toggle" aria-label="Menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html" class="active">Lessons</a></li>
+        <li><a href="quiz.html">Quizzes</a></li>
+        <li><a href="form.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Interactive Lessons</h2>
+    <p>Select a language and start learning with dynamic flashcards.</p>
+
+    <section id="flashcards">
+        <h2>Vocabulary Flashcards</h2>
+        <div id="language-selector">
+          <label for="language">Choose a language:</label>
+          <select id="language">
+            <option value="portuguese">Portuguese</option>
+            <option value="spanish">Spanish</option>
+            <option value="english">English</option>
+          </select>
+        </div>
+        <div id="card-container"></div>
+        <div id="category-selector">
+            <label for="category">Choose a category:</label>
+            <select id="category">
+              <option value="all">All</option>
+              <option value="greetings">Greetings</option>
+              <option value="food">Food</option>
+              <option value="days">Days</option>
+              <option value="numbers">Numbers</option>
+              <option value="animals">Animals</option>
+            </select>
+          </div>
+          
+    </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Language Learner. Last updated: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

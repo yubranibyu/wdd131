@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizzes | Language Learner</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="quizzes.html" class="active">Quizzes</a></li>
+        <li><a href="form.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="quiz-page">
+    <h1 class="quiz-title">Practice with Quizzes</h1>
+
+    <section class="quiz-setup">
+      <label for="quiz-language">Choose a language:</label>
+      <select id="quiz-language">
+        <option value="portuguese">Portuguese</option>
+        <option value="spanish">Spanish</option>
+        <option value="english">English</option>
+      </select>
+    </section>
+
+    <section id="quiz-container" class="quiz-container">
+      <!-- El contenido de preguntas se inserta aquí con JavaScript -->
+    </section>
+
+    <!-- Botón "Next" se mantiene fuera para que no se borre con innerHTML -->
+    <button id="next-question" class="next-btn">Next</button>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Language Learner</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
